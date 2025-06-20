@@ -46,20 +46,22 @@
 
       <article class="article">
         <div class="article-container">
-          <h2 class="article-title">話しかけた内容に動きと音声で応答するぬいぐるみ</h2>
+          <h2 class="article-title">コンピュータグラフィックス自由課題</h2>
           <div class="article-body">
             <p>
-              <img src="img/stuffedtoyrobot.png" alt="">
+              <img src="img/3dcg.png" alt="">
             </p>
             <p>
-                ChatGPTのAPIを使った高度な対話性能を持ち、様々なぬいぐるみに対応した感情表現動作が可能な、低価格（5000円弱）の
-                ぬいぐるみ型コミュニケーションロボットを制作しました。
-                <a href="https://100program.jp/">100Program</a>内で、優秀AI賞とLINK-J賞を受賞しました。<br>（<a href="https://100program.jp/">100Program</a>の”PAST FINALISTS”→”3期生”の項目）
+                自分で撮影した写真を3DCGで再現し、雪を降らせられるようにしました。
+            </p>
+            <p>
+                撮影した写真
+                <img src="img/cg-original.jpg" alt="">
             </p>
             <!-- <h3>URL</h3>
             <p><a href="https://yahoo.co.jp" target="_blank" rel="noopener">https://yahoo.co.jp</a></p> -->
-            <h3>担当</h3>
-            <p>企画・チームリーダー・コーディング（自然言語処理部分）</p>
+            <!-- <h3>担当</h3>
+            <p>企画・チームリーダー・コーディング（自然言語処理部分）</p> -->
             <!-- <h3>サイトの目的</h3>
             <p>サービスの認知と新規クライアントの獲得</p>
             <h3>ターゲット</h3>
@@ -73,10 +75,22 @@
             </p> -->
             <h3>コーディングについて</h3>
             <p>
-              <ul>
-                <li>ChatGPTのAPI利用部分</li>
-                <li>モーターとのデータ通信部分</li>
-              </ul>
+              HTML, JavaScriptを使用。
+            </p>
+            <h3>工夫した点</h3>
+            <p>
+                <ul>
+                    <li>
+                        光源を使い分けたこと（奥のツリー付近にはスポットライト光源、全体的な明るさ調整には平行光源、建物の窓には矩形光源）。
+                    </li>
+                    <li>
+                        ツリー状の飾り付けを規則的にするためfor文を利用。
+                    </li>
+                    <li>
+                        建物の木枠作成において、建物4つ分をほぼ同じコードで作れるように変数設定を工夫。
+                    </li>
+                </ul>
+                
               
             </p>
           </div>

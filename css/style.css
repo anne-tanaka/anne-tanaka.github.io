@@ -210,6 +210,26 @@ img {
   margin-top: 5px;
 }
 
+/* 各作品の画像/動画を囲むコンテナ (works-img) の設定 */
+.works-img {
+  width: 100%; /* 親要素（works-item）の幅いっぱいに */
+  height: 300px; /* ★基本の縦サイズを300pxに指定 */
+  overflow: hidden; /* 指定した高さを超える部分は非表示にする */
+  display: flex; /* 画像をworks-img内で中央寄せするためにFlexboxを使用 */
+  align-items: center; /* 垂直方向中央寄せ */
+  justify-content: center; /* 水平方向中央寄せ */
+  background-color: #f0f0f0; /* 背景色（画像が小さい場合など、余白が見える時の色） */
+}
+
+/* works-img内の画像（imgタグ）と動画（videoタグ）の設定 */
+.works-img img {
+  max-height: 300px; /* ★縦の最大サイズを300pxに制限 */
+  width: auto;       /* ★縦横比を維持しつつ、幅は自動調整 */
+  max-width: 100%;   /* ★幅が親要素（works-img）を超えないようにする */
+  object-fit: contain; /* ★重要: アスペクト比を保ち、コンテナ内に収める */
+  display: block;    /* インライン要素特有の余白をなくすため */
+}
+
 /*--------------------------------
  Skill
 ---------------------------------*/
@@ -442,6 +462,19 @@ img {
   font-size: 15px;
   line-height: 1.8;
   margin-bottom: 30px;
+}
+
+.article-body p img { /* article-body 内の p タグに続く img タグに適用 */
+  display: block; /* img要素をブロックレベル要素に変更 */
+  margin: 0 auto; /* 左右のマージンを自動調整して中央揃え */
+}
+
+/* 特定の画像にだけ適用したい場合（例: .article-body 内で、cg-original.jpg にのみ適用） */
+img[src="img/cg-original.jpg"] {
+  max-width: 30%; /* 特定の画像を親要素の50%に制限 */
+  height: auto;
+  display: block;
+  margin: 20px auto;
 }
 
 .home-link {
